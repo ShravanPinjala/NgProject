@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-laptop-card',
@@ -6,13 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./laptop-card.component.css']
 })
 export class LaptopCardComponent implements OnInit {
-
-  Laptop: any = {
-    "Name": "HP Inspiron 500",
-    "Id": 1,
-    "Type": "Business",
-    "Price": 500
-  }
+  
+@Input() laptop_card: any
   constructor() { }
 
   ngOnInit() {

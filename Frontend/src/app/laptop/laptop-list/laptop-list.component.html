@@ -1,1 +1,5 @@
-<p>laptop-list works!</p>
+<div class="row pt-3">
+    <div *ngFor="let laptop of Laptops" class="card shadow-lg col-sm-3 p-3">
+        <app-laptop-card [laptop_card]="laptop"></app-laptop-card>
+    </div>
+</div>
